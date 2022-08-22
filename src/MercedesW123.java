@@ -1,10 +1,12 @@
 public class MercedesW123 extends Cars{
 
     private int levelOfSwag;
+    private int maxSpeed;
 
-    public MercedesW123(String name, int weight, int noOfWheels, int noOfDoors, int noOfGears, int currentGear, int speed, int levelOfSwag) {
+    public MercedesW123(String name, int weight, int noOfWheels, int noOfDoors, int noOfGears, int currentGear, int speed, int levelOfSwag, int maxSpeed) {
         super(name, weight, noOfWheels, noOfDoors, noOfGears, currentGear, speed);
         this.levelOfSwag = levelOfSwag;
+        this.maxSpeed = maxSpeed;
     }
 
     public int getLevelOfSwag() {
@@ -22,4 +24,13 @@ public class MercedesW123 extends Cars{
 
     }
 
+    @Override
+    public void increaseSpeed() {
+        if (getCurrentSpeed() <= this.maxSpeed - 10) {
+            super.increaseSpeed();
+        }
+        else if (getCurrentSpeed() >= this.getCurrentSpeed())
+
+            System.out.println("Y");
+    }
 }

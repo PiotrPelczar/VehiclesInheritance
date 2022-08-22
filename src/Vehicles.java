@@ -10,7 +10,7 @@ public class Vehicles {
         this.name = name;
         this.weight = weight;
 
-        this.currentSpeed = 0;
+//        this.currentSpeed = 0;
         this.currentDirection = 0;
     }
 
@@ -19,11 +19,6 @@ public class Vehicles {
         System.out.println("Vehicle current direction is" + currentDirection + " degrees");
     }
 
-    public void move(int direction, int speed){
-        this.currentDirection += direction;
-        this.currentSpeed += speed;
-        System.out.println("Vehicle moves at " + currentSpeed + " in direction " + currentDirection);
-    }
 
     public void stop (){
         this.currentSpeed = 0;

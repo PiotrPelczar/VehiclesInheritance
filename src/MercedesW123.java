@@ -2,8 +2,8 @@ public class MercedesW123 extends Cars{
 
     private int levelOfSwag;
 
-    public MercedesW123(int noOfDoors, int noOfGears, int currentGear, int levelOfSwag) {
-        super("Mercedes W123",1500,4,4,4,1);
+    public MercedesW123(String name, int weight, int noOfWheels, int noOfDoors, int noOfGears, int currentGear, int speed, int levelOfSwag) {
+        super(name, weight, noOfWheels, noOfDoors, noOfGears, currentGear, speed);
         this.levelOfSwag = levelOfSwag;
     }
 
@@ -11,10 +11,6 @@ public class MercedesW123 extends Cars{
         return this.levelOfSwag;
     }
 
-    @Override
-    public void setCurrentGear(int currentGear) {
-        super.setCurrentGear(currentGear);
-    }
 
     public void swagOO() {
         if (this.levelOfSwag > 1000){
@@ -25,4 +21,5 @@ public class MercedesW123 extends Cars{
         }
 
     }
+
 }
